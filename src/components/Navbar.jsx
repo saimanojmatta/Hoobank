@@ -10,7 +10,7 @@ const Navbar = () => {
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
         {navLinks.map((item,index)=>(
           <li key={index}
-            className={`font-poppins font-normal cursor-pointer text-[16px] text-white
+            className={`font-poppins font-normal cursor-pointer text-[16px]
             ${active === item.title ?'text-white':'text-dimWhite'}
            ${index===navLinks.length-1 ?'mr-0':'mr-10'}`}
             onClick={()=>setactive(item.title)}
